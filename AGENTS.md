@@ -1,6 +1,6 @@
 # Luna-first Engineering Rules
 
-Use GPT-5.6 Luna Max as the primary model for normal coding, analysis, testing, review, and task orchestration. Sol is an on-demand advisor, not the default supervisor.
+Use GPT-6 Luna Max as the primary model for normal coding, analysis, testing, review, and task orchestration. GPT-6.1 Sol Max is an on-demand advisor, not the default supervisor.
 
 ## Automatic routing
 
@@ -54,4 +54,4 @@ Workers must stop on ambiguity, unexpected interface/dependency changes, securit
 
 The primary Luna thread owns integration and normal final acceptance. Inspect actual diffs and validation results; do not accept summaries alone. Sol owns only the difficult decision it was asked to make and any explicitly requested high-risk final review.
 
-Never claim a model ran unless the agent activity or tool result identifies it. If a configured model is unavailable, report the limitation and use the best available safe route.
+Never claim a model ran unless the agent activity or tool result identifies the configured model. If a configured model is unavailable, report the limitation and use the best available safe route.
