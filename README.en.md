@@ -2,7 +2,7 @@
 
 [中文说明](README.md)
 
-This configuration uses **GPT-6 Luna Max** as the everyday primary model and execution layer, escalating only genuinely difficult decisions to a **GPT-6.1 Sol Max Advisor**.
+This configuration uses **GPT-6 Luna Max** as the everyday primary model and execution layer, escalating only genuinely difficult decisions to a **GPT-6.1 Sol High Advisor**.
 
 “Unlimited ammunition” is a metaphor: subagents still consume tokens and remain subject to account limits, model access, and concurrency caps. The goal is to conserve Sol usage, not bypass limits.
 

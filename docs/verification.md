@@ -18,7 +18,7 @@ assert config['agents']['default_subagent_reasoning_effort'] == 'max'
 assert luna['name'] == 'luna_worker' and luna['model'] == 'gpt-6-luna'
 assert luna['model_reasoning_effort'] == 'max'
 assert sol['name'] == 'sol_advisor' and sol['model'] == 'gpt-6.1-sol'
-assert sol['model_reasoning_effort'] == 'max'
+assert sol['model_reasoning_effort'] == 'high'
 print('Static configuration checks passed.')
 PY
 ```
@@ -35,7 +35,7 @@ Static TOML validation cannot prove model access or runtime loading. Report actu
 
 ## Fallbacks
 
-- If custom agents are unavailable, select GPT-6 Luna Max as the main model and request GPT-6.1 Sol Max manually only for escalation cases.
+- If custom agents are unavailable, select GPT-6 Luna Max as the main model and request GPT-6.1 Sol High manually only for escalation cases.
 - If GPT-6 Luna is unavailable, use the highest supported Luna effort and disclose the substitution.
 - If GPT-6.1 Sol is unavailable, stop for decisions where its review is required or explicitly document the alternate advisor model.
 - If parallelism adds more coordination than value, use `LUNA_LOCAL`.

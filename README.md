@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-这套配置把 **GPT-6 Luna Max** 设为日常主模型和执行层，只在真正困难的判断上调用 **GPT-6.1 Sol Max Advisor**。
+这套配置把 **GPT-6 Luna Max** 设为日常主模型和执行层，只在真正困难的判断上调用 **GPT-6.1 Sol High Advisor**。
 
 > “无限子弹”是比喻。子 Agent 仍消耗 Token，并受账户额度、模型权限和并发上限约束。这套方案的目标是减少 Sol 消耗，而不是绕过额度限制。
 
